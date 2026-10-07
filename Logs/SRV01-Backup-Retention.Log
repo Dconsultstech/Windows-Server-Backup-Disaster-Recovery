@@ -1,0 +1,85 @@
+
+==========================================
+Backup Retention Run: 10/06/2026 06:22:20
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:22:42
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:23:11
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:24:16
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:25:37
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:30:55
+==========================================
+Backup count: 0
+No folders deleted. Retention limit has not been exceeded.
+Remaining backup copies: 0
+Available D: drive space: 0 GB
+Retention process completed successfully.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:36:41
+==========================================
+Repository accessible: \\DC01\SRV01-Backup
+Snapshot folders found: 4
+Snapshot: 2026-10-06_060434
+Snapshot: 2026-10-06_054037
+Snapshot: 2026-10-06_051600
+Snapshot: 2026-10-06_040249
+Retention limit not exceeded.
+Retention policy: Keep 7 snapshots.
+Remaining snapshots: 4
+WindowsImageBackup detected and excluded from retention deletion.
+Retention process completed.
+
+==========================================
+Backup Retention Run: 10/06/2026 06:48:54
+==========================================
+Repository accessible: \\DC01\SRV01-Backup
+Snapshot folders found: 5
+Snapshot: 2026-10-06_064626
+Snapshot: 2026-10-06_060434
+Snapshot: 2026-10-06_054037
+Snapshot: 2026-10-06_051600
+Snapshot: 2026-10-06_040249
+Retention limit not exceeded.
+Retention policy: Keep 7 snapshots.
+Remaining snapshots: 5
+WindowsImageBackup detected and excluded from retention deletion.
+Retention process completed.

@@ -1,0 +1,135 @@
+D CONSULT TECH
+DOMAIN CONTROLLER DISASTER RECOVERY RUNBOOK
+
+System:
+DC01
+Domain:
+Dconsultstech.local
+
+Recovery Objective:
+Restore Domain Controller functionality using a verified System State backup.
+
+--------------------------------------------------
+1. IDENTIFY THE FAILURE
+--------------------------------------------------
+
+Confirm DC01 is unavailable.
+
+Check:
+- Domain authentication
+- DNS
+- Active Directory
+- SYSVOL
+- Network connectivity
+
+--------------------------------------------------
+2. IDENTIFY THE RECOVERY POINT
+--------------------------------------------------
+
+Run:
+
+wbadmin get versions -backupTarget:E:
+
+Select the most recent valid System State backup.
+
+Current verified recovery point:
+
+10/05/2026-10:47
+
+--------------------------------------------------
+3. VERIFY RECOVERY CONTENT
+--------------------------------------------------
+
+Run:
+
+wbadmin get items -version:10/05/2026-10:47 -backupTarget:E:
+
+Confirm:
+
+- Active Directory / NTDS
+- SYSVOL / FRS
+- Registry
+
+--------------------------------------------------
+4. START RECOVERY ENVIRONMENT
+--------------------------------------------------
+
+Boot the affected server into:
+
+Windows Recovery Environment
+
+Select:
+
+Troubleshoot
+Advanced Options
+System Image Recovery
+
+Use the verified backup source.
+
+--------------------------------------------------
+5. SYSTEM STATE RECOVERY
+--------------------------------------------------
+
+Perform System State recovery using the appropriate
+Windows Server Backup recovery procedure.
+
+For an Active Directory Domain Controller, ensure
+Directory Services Restore Mode (DSRM) requirements
+are satisfied.
+
+--------------------------------------------------
+6. POST-RECOVERY VALIDATION
+--------------------------------------------------
+
+Verify:
+
+- Server boots successfully
+- DNS service starts
+- Active Directory starts
+- SYSVOL is available
+- Domain authentication works
+- AD users are accessible
+- AD computers are accessible
+
+Run:
+
+dcdiag
+
+and:
+
+dcdiag /test:advertising
+
+--------------------------------------------------
+7. DATA VALIDATION
+--------------------------------------------------
+
+Verify:
+
+- Finance
+- HR
+- IT
+- Sales
+
+and confirm required files are available.
+
+--------------------------------------------------
+8. INCIDENT CLOSEOUT
+--------------------------------------------------
+
+Record:
+
+- Failure time
+- Recovery point used
+- Recovery start time
+- Recovery completion time
+- Services restored
+- Data restored
+- Any errors encountered
+- Lessons learned
+
+Recovery status:
+PASS / FAIL
+
+--------------------------------------------------
+END OF RUNBOOK
+--------------------------------------------------
