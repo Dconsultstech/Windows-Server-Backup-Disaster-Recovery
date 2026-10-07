@@ -43,8 +43,8 @@ The primary objectives were to:
 ---
 
 ## Architecture
----
-ext
+
+` ext
                          D CONSULT TECH
                         LAB ENVIRONMENT
                               |
@@ -73,7 +73,7 @@ ext
           │                               │
    Timestamped snapshots           AD / SYSVOL /
                                   Registry / C:
----
+`
 
 ---
 
