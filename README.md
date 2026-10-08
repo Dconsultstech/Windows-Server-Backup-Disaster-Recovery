@@ -142,12 +142,12 @@ A controlled file restoration test was performed using data from the file-share 
 
 The backup contained departmental data including:
 
-`	ext
+```	text
 Finance
 HR
 IT
 Sales
-`
+```
 
 A test file was successfully recovered, demonstrating that the file backup could be used for practical data restoration rather than simply confirming that backup files existed.
 
@@ -163,9 +163,9 @@ The file-share retention policy keeps the latest **7 timestamped snapshots**.
 
 The retention script:
 
-`	ext
+```	text
 SRV01-Backup-Retention.ps1
-`
+```
 
 specifically targets timestamped snapshot folders and excludes the WindowsImageBackup directory.
 
@@ -223,7 +223,7 @@ The recovery process was documented rather than intentionally destroying the wor
 
 ### Recovery Workflow
 
-`	ext
+```	text
 Identify Failure
       ↓
 Identify Recovery Point
@@ -245,7 +245,7 @@ Verify Authentication
 Verify Client Connectivity
       ↓
 Validate File Services
-`
+```
 
 ---
 
@@ -310,7 +310,7 @@ A PowerShell-based Backup & DR Health Check was developed to monitor:
 
 Example:
 
-`	ext
+```	text
 D CONSULT TECH - BACKUP & DR HEALTH CHECK
 
 [PASS] Backup repository accessible
@@ -320,7 +320,7 @@ D CONSULT TECH - BACKUP & DR HEALTH CHECK
 [PASS] Netlogon service is running
 [PASS] Backup scheduled task exists
 [PASS] Retention scheduled task exists
-`
+```
 
 ---
 
