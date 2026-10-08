@@ -95,7 +95,7 @@ Example:
 Example:
 
 ``` text
-\DC01\SRV01-Backup6-10-06_060434\IT
+\DC01\SRV01-Backup\2026-10-06_060434\
 ```
 
 ### Step 5 --- Restore the required file or folder
