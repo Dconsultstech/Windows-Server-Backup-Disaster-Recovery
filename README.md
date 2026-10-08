@@ -44,7 +44,7 @@ The primary objectives were to:
 
 ## Architecture
 
-` ext
+``` text
                          D CONSULT TECH
                         LAB ENVIRONMENT
                               |
@@ -73,7 +73,7 @@ The primary objectives were to:
           │                               │
    Timestamped snapshots           AD / SYSVOL /
                                   Registry / C:
-`
+```
 
 ---
 
@@ -87,7 +87,7 @@ Critical departmental data from SRV01 is copied into timestamped backup snapshot
 
 Example:
 
-`	ext
+```	text
 \\DC01\SRV01-Backup
 │
 ├── 2026-10-06_060434
@@ -98,7 +98,7 @@ Example:
 │
 └── WindowsImageBackup
 
-`
+```
 
 The file-share backup protects departmental business data.
 
